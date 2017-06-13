@@ -7,7 +7,13 @@ import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'leaderboard', component: LeaderboardPageComponent },
+  {
+    path: 'leaderboard',
+    component: LeaderboardPageComponent,
+    data: {
+      leaderboardData: []
+    }
+  },
   { path: 'home', component: HomeComponent },
   { path: '**', component: NoContentComponent },
 ];

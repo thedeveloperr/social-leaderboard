@@ -1,11 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 import { LeaderboardItemModel } from './common';
 
 @Component({
   selector: 'sb-leaderboard',
   templateUrl: './leaderboard.component.html',
-  styleUrls: ['./leaderboard.component.scss']
+  styleUrls: ['./leaderboard.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LeaderboardComponent implements OnInit {
 

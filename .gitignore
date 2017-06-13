@@ -70,3 +70,24 @@ dll/
 *.css.shim.ts
 *.ngsummary.json
 *.shim.ngstyle.ts
+
+
+# # Python:Flask #
+# *.pyc
+# *.pyo
+# env
+# env*
+# dist
+# build
+# *.egg
+# *.egg-info
+# _mailinglist
+# .tox
+# .cache/
+# .idea/
+
+# # Coverage reports
+# htmlcov
+# .coverage
+# .coverage.*
+# *,cover

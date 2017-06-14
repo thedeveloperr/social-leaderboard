@@ -1,6 +1,23 @@
-<p>
-  lb-hero-item works!
-</p>
-<pre>
-  {{ item | json }}
-</pre>
+<div class="lb-hero-item mat-elevation-z2">
+  <div class="container" fxLayout fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlexAlign="center" fxFlex="12%"><span class="rank1">#1</span></div>
+    <div fxFlexAlign="center" fxFlex>
+      <div class="container" fxLayout fxLayout="column" fxLayoutGap="5px" fxfxLayoutAlign="center">
+        <div fxFlex><span class="team-name">{{item.team.name}}</span></div>
+        <div fxFlex>
+          <i class="social social-twitter"></i>&nbsp;{{item.stats.twitter.tweet_count}} <span> | </span>
+          <i class="social social-instagram"></i>&nbsp;{{item.stats.instagram.instagram_post_count}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+    <div fxFlexAlign="center" fxFlex="35%">
+      <span *ngFor="let member of item.team.members">
+          <img [src]="member.picture_url" class="member-picture">
+          </span>
+    </div>
+    <div fxFlexAlign="center" fxFlex> Total Engangements: {{item.stats.total_engangement}}
+    </div>
+  </div>
+

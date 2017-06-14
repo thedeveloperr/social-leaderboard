@@ -1,0 +1,39 @@
+$twitter-icon-img: "/assets/icon/twitter.png";
+$instagram-icon-img: "/assets/icon/instagram.png";
+$social-icon-size: 16px;
+$member-pic-size: 32px;
+$item-card-max-width: 600px;
+$rank-1-font-size: 35px;
+$team-name-font-size: 20px;;
+
+.lb-hero-item{
+  padding: 2px;
+}
+
+.social {
+  display: inline-block;
+  height: $social-icon-size;
+  width: $social-icon-size;
+  background-size: contain;
+}
+.social-twitter {
+  background-image: url($twitter-icon-img);
+}
+.social-instagram {
+  background-image: url($instagram-icon-img);
+}
+.member-picture{
+  height: $member-pic-size;
+  width: $member-pic-size;
+}
+.container{
+  margin:15px;
+}
+
+.rank1{
+  font-size: $rank-1-font-size;
+}
+
+.team-name{
+  font-size: $team-name-font-size;
+}

@@ -1,7 +1,7 @@
 <div class="lb-hero-item mat-elevation-z2">
   <div class="container" fxLayout fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center">
-    <div fxFlexAlign="center" fxFlex="12%"><span class="rank1">#1</span></div>
-    <div fxFlexAlign="center" fxFlex>
+    <div fxFlexAlign="center" fxFlex="230px" fxFlex.xs="" class="rank-cont"><span class="rank1">#1</span></div>
+    <div fxFlexAlign="center" fxFlex="grow">
       <div class="container" fxLayout fxLayout="column" fxLayoutGap="5px" fxfxLayoutAlign="center">
         <div fxFlex><span class="team-name">{{item.team.name}}</span></div>
         <div fxFlex>
@@ -12,12 +12,12 @@
     </div>
   </div>
   <div class="container" fxLayout fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
-    <div fxFlexAlign="center" fxFlex="35%">
+    <div fxFlexAlign="center" fxFlex="230px" fxFlex.xs="">
       <span *ngFor="let member of item.team.members">
           <img [src]="member.picture_url" class="member-picture">
           </span>
     </div>
-    <div fxFlexAlign="center" fxFlex> Total Engangements: {{item.stats.total_engangement}}
+    <div fxFlexAlign="center" fxFlex > Total Engangements: {{item.stats.total_engangement}}
     </div>
   </div>
 

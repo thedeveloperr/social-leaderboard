@@ -1,3 +1,6 @@
-<div>
-  <sb-lb-hero-item [item]="items[0]"></sb-lb-hero-item>
+<div *ngFor="let i of items;let j=index " >
+
+  <sb-lb-hero-item *ngIf="j===0" [item]="i"></sb-lb-hero-item>
+  <sb-lb-list-item *ngIf="j<5 && j>0" [item]="i" [rank]="j+1" ></sb-lb-list-item>
+  <!--<sb-lb-tile-item *ngIf="j>=5" [item]="i" [rank]="j" ></sb-lb-tile-item>-->
 </div>

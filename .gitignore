@@ -72,22 +72,21 @@ dll/
 *.shim.ngstyle.ts
 
 
-# # Python:Flask #
-# *.pyc
-# *.pyo
-# env
-# env*
-# dist
-# build
-# *.egg
-# *.egg-info
-# _mailinglist
-# .tox
-# .cache/
-# .idea/
-
-# # Coverage reports
-# htmlcov
-# .coverage
-# .coverage.*
-# *,cover
+# Python:Flask #
+*.pyc
+*.pyo
+env
+env*
+dist
+build
+*.egg
+*.egg-info
+_mailinglist
+.tox
+.cache/
+.idea/
+# Coverage reports
+htmlcov
+.coverage
+.coverage.*
+*,cover

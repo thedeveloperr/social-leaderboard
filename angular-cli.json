@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "root": "src",
+    "prefix": "sb"
+  }],
+  "defaults": {
+    "prefixInterfaces": false,
+    "styleExt": "scss",
+    "spec": {
+      "directive": false,
+      "service": false,
+      "pipe": false
+    }
+  }
+}

@@ -1,12 +1,13 @@
-<div class="lb-list-item mat-elevation-z2">
+<div class="lb-list-item mat-elevation-z1">
   <div class="container" fxLayout fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center">
-    <div fxFlexAlign="center" class="rank-cont" fxFlex="230px;"><span class="list-rank">#{{rank}}</span></div>
+    <div fxFlexAlign="center" class="rank-cont" fxFlex="230px;" fxFlex.xs=""><span [style.xs]="{'font-size':'15px'}" class="list-rank">#{{rank}}</span></div>
 
-    <div fxFlex fxFlexAlign="center"><span class="team-name">{{item.team.name}}</span></div>
+    <div fxFlex fxFlexAlign="center"><span class="team-name" [style.xs]="{'font-size':'15px'}">{{item.team.name}}</span></div>
     <div fxFlex fxFlexAlign="center">
-      <i class="social social-twitter"></i>&nbsp;{{item.stats.twitter.tweet_count}}
-      <i class="social social-instagram"></i>&nbsp;{{item.stats.instagram.instagram_post_count}}
+      <i class="social social-twitter"></i>&nbsp;<span style="font-size:20px;" [style.xs]="{'font-size':'15px'}">{{item.stats.twitter.tweet_count}} |</span>
+      <i class="social social-instagram"></i>&nbsp;<span style="font-size:20px;" [style.xs]="{'font-size':'15px'}">{{item.stats.instagram.instagram_post_count}}</span>
     </div>
     <div fxFlexAlign="center" fxFlex> Total Engangements: {{item.stats.total_engangement}}
     </div>
   </div>
+</div>

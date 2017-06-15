@@ -1,12 +1,13 @@
 $twitter-icon-img: "/assets/icon/twitter.png";
 $instagram-icon-img: "/assets/icon/instagram.png";
-$social-icon-size: 16px;
+$social-icon-size: 25px;
 $member-pic-size: 32px;
 $rank-font-size: 25px;
 $team-name-font-size: 20px;
 ;
 .lb-list-item {
-  padding: 2px;
+  background-color: white;
+  padding: 15px;
 }
 
 
@@ -30,9 +31,7 @@ $team-name-font-size: 20px;
   width: $member-pic-size;
 }
 
-.container {
-  margin: 15px;
-}
+
 
 .list-rank {
   font-size: $rank-font-size;

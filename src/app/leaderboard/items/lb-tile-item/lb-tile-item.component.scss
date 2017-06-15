@@ -1,0 +1,19 @@
+$twitter-icon-img: "/assets/icon/twitter.png";
+$instagram-icon-img: "/assets/icon/instagram.png";
+$social-icon-size: 16px;
+$member-pic-size: 32px;
+$rank-font-size: 25px;
+$team-name-font-size: 20px;
+;
+.lb-tile-item {
+  background-color: white;
+  padding: 2px;
+}
+
+.list-rank {
+  font-size: $rank-font-size;
+}
+
+.team-name {
+  font-size: $team-name-font-size;
+}

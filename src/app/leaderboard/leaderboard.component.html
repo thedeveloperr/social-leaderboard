@@ -1,6 +1,20 @@
-<div *ngFor="let i of items;let j=index " >
+<div class="leaderboard-item" *ngFor="let i of items;let j=index ">
 
   <sb-lb-hero-item *ngIf="j===0" [item]="i"></sb-lb-hero-item>
-  <sb-lb-list-item *ngIf="j<5 && j>0" [item]="i" [rank]="j+1" ></sb-lb-list-item>
-  <!--<sb-lb-tile-item *ngIf="j>=5" [item]="i" [rank]="j" ></sb-lb-tile-item>-->
+  <sb-lb-list-item *ngIf="j<5 && j>0" [item]="i" [rank]="j+1"></sb-lb-list-item>
+
 </div>
+<div *ngFor="let it of items;let jt=index; " >
+<div *ngIf="jt>=5 && (jt-5)%3==0" class="list-item container" fxLayout >
+
+    <sb-lb-tile-item fxFlex="32%" *ngIf="items[jt]" [item]="items[jt]" [rank]="jt+1"></sb-lb-tile-item>
+    <span fxFlex></span>
+    <sb-lb-tile-item fxFlex="32%" *ngIf="items[jt+1]" [item]="items[jt+1]" [rank]="jt+2"></sb-lb-tile-item>
+    <span fxFlex></span>
+    <sb-lb-tile-item fxFlex="32%" *ngIf="items[jt+2]" [item]="items[jt+2]" [rank]="jt+3"></sb-lb-tile-item>
+
+</div>
+
+</div>
+
+<pre>{{items.length}}</pre>

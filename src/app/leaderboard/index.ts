@@ -9,5 +9,6 @@ export const LEADERBOARD_COMPONENTS = [
   LB.LeaderboardPageComponent,
   LB.LeaderboardComponent,
   LB.LbListItemComponent,
-  LB.LbHeroItemComponent
+  LB.LbHeroItemComponent,
+  LB.LbTileItemComponent
 ];

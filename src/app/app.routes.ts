@@ -6,9 +6,9 @@ import { LeaderboardPageComponent } from './leaderboard';
 import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
-  { path: '', component: HomeComponent },
+
   {
-    path: 'leaderboard',
+    path: '',
     component: LeaderboardPageComponent,
     data: {
       leaderboardData: [{

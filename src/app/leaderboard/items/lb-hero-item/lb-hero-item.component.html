@@ -12,12 +12,13 @@
     </div>
   </div>
   <div class="container" fxLayout fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
-    <div fxFlexAlign="center" fxFlex="230px" fxFlex.xs="">
+    <div fxFlexAlign="center" fxFlex>
       <span *ngFor="let member of item.team.members">
-          <img [src]="member.picture_url" class="member-picture">
+          <img *ngIf="member.image_url!=''" [src]="member.image_url" class="member-picture">
           </span>
     </div>
-    <div fxFlexAlign="center" fxFlex > Total Engangements: {{item.stats.total_engangement}}
+    <div fxFlexAlign="center" fxFlex > Total Engangements: {{item.stats.total_engagements}}
     </div>
+    <div fxFlex ></div>
   </div>
 

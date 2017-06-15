@@ -1,10 +1,9 @@
 $twitter-icon-img: "/assets/icon/twitter.png";
 $instagram-icon-img: "/assets/icon/instagram.png";
 $social-icon-size: 25px;
-$member-pic-size: 32px;
-$rank-font-size: 25px;
-$team-name-font-size: 20px;
-;
+$rank-font-size: 20px;
+$team-name-font-size: 18px;
+
 .lb-list-item {
   background-color: white;
   padding: 15px;
@@ -25,12 +24,6 @@ $team-name-font-size: 20px;
 .social-instagram {
   background-image: url($instagram-icon-img);
 }
-
-.member-picture {
-  height: $member-pic-size;
-  width: $member-pic-size;
-}
-
 
 
 .list-rank {

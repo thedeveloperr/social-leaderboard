@@ -1,9 +1,9 @@
 export interface MemberModel {
   _id: string;
   name: string;
-  picture_url?: string;
+  image_url?: string;
   instagram_username: string;
-  instagram_uid: string;
+  instagram_id: string;
   twitter_username: string;
-  twitter_uid: string;
+  twitter_id: string;
 }

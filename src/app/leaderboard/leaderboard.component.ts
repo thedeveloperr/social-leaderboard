@@ -10,7 +10,7 @@ import { LeaderboardItemModel } from './common';
 })
 export class LeaderboardComponent implements OnInit {
 
-  @Input() public items: LeaderboardItemModel[];
+  @Input() public items: LeaderboardItemModel[] = [];
 
   constructor() {
     //

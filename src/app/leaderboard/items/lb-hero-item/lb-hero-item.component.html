@@ -1,6 +1,24 @@
-<p>
-  lb-hero-item works!
-</p>
-<pre>
-  {{ item | json }}
-</pre>
+<div class="lb-hero-item mat-elevation-z2">
+  <div class="container" fxLayout fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center">
+    <div fxFlexAlign="center" fxFlex="230px" fxFlex.xs="" class="rank-cont"><span class="rank1">#1</span></div>
+    <div fxFlexAlign="center" fxFlex="grow">
+      <div class="container" fxLayout fxLayout="column" fxLayoutGap="5px" fxfxLayoutAlign="center">
+        <div fxFlex><span class="team-name">{{item.team.name}}</span></div>
+        <div fxFlex>
+          <i class="social social-twitter"></i>&nbsp;<span style="font-size: 25px;">{{item.stats.twitter.tweet_count}} |</span>
+          <i class="social social-instagram"></i>&nbsp;<span  style="font-size: 25px;">{{item.stats.instagram.instagram_post_count}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" fxLayout fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+    <div fxFlexAlign="center" fxFlex>
+      <span *ngFor="let member of item.team.members">
+          <img *ngIf="member.image_url!=''" [src]="member.image_url" class="member-picture">
+          </span>
+    </div>
+    <div fxFlexAlign="center" fxFlex > Total Engangements: {{item.stats.total_engagements}}
+    </div>
+    <div fxFlex ></div>
+  </div>
+

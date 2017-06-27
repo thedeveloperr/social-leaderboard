@@ -8,6 +8,7 @@ import * as LB from './';
 export const LEADERBOARD_COMPONENTS = [
   LB.LeaderboardPageComponent,
   LB.LeaderboardComponent,
-
-  LB.LbHeroItemComponent
+  LB.LbListItemComponent,
+  LB.LbHeroItemComponent,
+  LB.LbTileItemComponent
 ];

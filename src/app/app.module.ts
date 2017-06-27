@@ -4,6 +4,9 @@ import { HttpModule } from '@angular/http';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 import { RouterModule, PreloadAllModules } from '@angular/router';
+import { MdCardModule } from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -51,7 +54,9 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules }),
+    MdCardModule,
+    FlexLayoutModule
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
